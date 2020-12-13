@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="image1" src="https://i1.faceprep.in/ProGrad/space-man-1.png" alt="Me">
+    <img id="image2" src="https://i1.faceprep.in/ProGrad/space-man-2.png" alt="My BFF">
+    <form action="">
+        <h1>Rocket around the moon with your BFF's</h1>
+        <label for="country" class="block">Departure Country</label>
+        <select name="countries" id="countries">
+           <option value="india">INDIA</option> 
+           <option value="uae">UAE</option>
+           <option value="usa">USA</option>
+           <option value="pakistan">PAKISTAN</option>
+           <option value="nepal">NEPAL</option>
+           <option value="uk">UK</option>
+        </select>
+        <label for="travellers" class="block">No. of Space Travellers</label>
+        <input type="number" onkeypress="return event.charcode>=48" min="1" name="travellers" id="travellers">
+
+        <label for="email" class="block">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="ilovespace@gmail.com">
+
+        <label for="rent" class="block">Do you wanna rent a spacesuit?</label>
+        
+        <input type="radio" name="rent-button" id="yes">
+        <label for="yes" class="rent-button">Yes, Please</label>
+
+        <input type="radio" name="rent-button" id="no">
+        <label for="no" class="rent-button">No, I have my own</label>
+
+        <input type="button" value="Take us to Space" id="button">
+    </form>
+</body>
+</html>
